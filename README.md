@@ -35,6 +35,23 @@ ifconfig
 From the above image the ip address of the robot is "172.20.10.13". Connect your smorphi using RDP client from your windows/mac/linux desktop by entering the ip address of your smorphi. Ensure your desktop is connected to the same wifi network as of your robot.
 
 
+## Compile & Install YDLidar SDK
+
+ydlidar_ros2_driver depends on YDLidar-SDK library. If you have never installed YDLidar-SDK library or it is out of date, you must first install YDLidar-SDK library. If you have installed the latest version of YDLidar-SDK, skip this step and go to the next step.
+
+1. Download or clone the [YDLIDAR/YDLidar-SDK](https://github.com/YDLIDAR/YDLidar-SDK) repository on GitHub.
+2. Compile and install the YDLidar-SDK under the ***build*** directory by following steps:
+  In the YDLidar SDK directory, run the following commands to compile the project:
+```
+git clone https://github.com/YDLIDAR/YDLidar-SDK.git
+cd YDLidar-SDK
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
+
 ## Installing Dependencies
 ```bash
 sudo apt-get install libgeographic-dev
@@ -48,7 +65,7 @@ cd ROS2_WORKSPACE/src
 git clone https://github.com/roarLab/smorphi_driver_ros2.git
 ```
 
-Build the cloned packages.
+## Build the cloned packages.
 ```bash
 cd ..
 colcon build
