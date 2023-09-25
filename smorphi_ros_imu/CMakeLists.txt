@@ -43,7 +43,7 @@ install(TARGETS imu_node
   DESTINATION lib/smorphi_ros_imu)
 install(DIRECTORY
   launch
-  DESTINATION share/${PROJECT_NAME}/launch/
+  DESTINATION share/${PROJECT_NAME}
   )
 
 if(BUILD_TESTING)
