@@ -59,6 +59,12 @@ sudo apt-get install libgeographic-dev
 ```bash
 sudo apt-get install ros-humble-geographic-msgs
 ```
+```bash
+sudo apt-get install ros-humble-tf-transformations
+sudo apt-get install ros-humble-diagnostics
+sudo pip3 install transforms3d
+pip install pyserial
+```
 git clone packages to the ROS2_WORKSPACE/src/ directory.
 ```bash
 cd ROS2_WORKSPACE/src
@@ -74,7 +80,11 @@ After building the packages, Source your workspace
 ```bash
 source install/setup.bash
 ```
-
+## Common Build Errors:
+deprecations in setup.py
+```bash
+pip install setuptools==58.2.0
+```
 ## Launching Smorphi Driver
 
 ```bash
