@@ -92,4 +92,29 @@ ros2 launch smorphi_ros2_launchers smorphi_bringup.launch.py
 ```
 
 
+## Activity 1: Teleoperating Smorphi
+
+```bash
+ros2 launch smorphi_ros2_launchers smorphi_bringup.launch.py
+```
+In another terminal
+```bash
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+Use the keyboard to teleop your smorphi!!
+
+## Activity 2: Mapping with Smorphi
+
+```bash
+ros2 launch smorphi_ros2_launchers smorphi_bringup.launch.py
+```
+In another terminal
+```bash
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+Open a new terminal and run slam toolbox to start mapping
+```bash
+ros2 launch smorphi_ros2_launchers smorphi_mapping.launch.py
+
+
 
