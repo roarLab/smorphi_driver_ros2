@@ -93,7 +93,11 @@ ros2 launch smorphi_ros2_launchers smorphi_bringup.launch.py
 
 
 ## Activity 1: Teleoperating Smorphi
-
+After connecting Masterboard, Lidar and Imu to Raspberry Pi, Run the below command to trigger the USB rules to allow access of the USB ports
+```bash
+sudo udevadm trigger
+```
+After running the above command. Close the terminal and open a new terminal to run the below commands to teleop smorphi.
 ```bash
 ros2 launch smorphi_ros2_launchers smorphi_bringup.launch.py
 ```
