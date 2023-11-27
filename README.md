@@ -114,7 +114,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 Open a new terminal and run slam toolbox to start mapping
 ```bash
-ros2 launch smorphi_ros2_launchers smorphi_mapping.launch.py
+ros2 launch smorphi_ros2_launchers smorphi_mapper_online_async_launch.py
 
 
 
