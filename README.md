@@ -119,6 +119,11 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 Open a new terminal and run slam toolbox to start mapping
 ```bash
 ros2 launch smorphi_ros2_launchers smorphi_mapper_online_async_launch.py
+```
+To save map run the following command in another terminal. Replace "my_map" with the name you want to save for the map.
+```bash
+ros2 run map_server map_saver -f my_map
+```
 
 
 
