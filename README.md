@@ -122,7 +122,7 @@ ros2 launch smorphi_ros2_launchers smorphi_mapper_online_async_launch.py
 ```
 To save map run the following command in another terminal. Replace "my_map" with the name you want to save for the map.
 ```bash
-ros2 run map_server map_saver -f my_map
+ros2 run nav2_map_server map_saver_cli -f my_map
 ```
 
 
