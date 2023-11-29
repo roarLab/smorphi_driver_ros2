@@ -120,6 +120,10 @@ Open a new terminal and run slam toolbox to start mapping
 ```bash
 ros2 launch smorphi_ros2_launchers smorphi_mapper_online_async_launch.py
 ```
+Open a new terminal and run rviz2 to see the mapping
+```bash
+rviz2
+```
 To save map run the following command in another terminal. Replace "my_map" with the name you want to save for the map.
 ```bash
 ros2 run nav2_map_server map_saver_cli -f my_map
