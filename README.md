@@ -128,6 +128,25 @@ To save map run the following command in another terminal. Replace "my_map" with
 ```bash
 ros2 run nav2_map_server map_saver_cli -f my_map
 ```
+## Activity 3: Nav2 with Smorphi
 
+Once the map is saved copy the my_map.pgm and my_map.yaml files to smorphi_ros2_launchers/map folder in the package.
+Add the map location in setup.py file as shown in the image below.
+
+<img width="928" alt="Screenshot 2024-02-08 at 4 50 48 PM" src="https://github.com/roarLab/smorphi_driver_ros2/assets/34149646/ae478aba-118e-4bac-ba7f-10584abf4c26">
+
+After saving the file, Build the package using the below command
+```bash
+colcon build
+```
+After the package is build run the following to launch smorphi
+```bash
+ros2 launch smorphi_ros2_launchers smorphi_bringup.launch.py
+```
+In another terminal
+```bash
+ros2 launch smorphi_ros2_launchers smorphi_nav2.launch.py
+```
+In the rviz window initialize the robot pose using 2d pose estimate and send navigation goals to smorphi for autonomous waypoint navigation.
 
 
