@@ -70,6 +70,12 @@ git clone packages to the ROS2_WORKSPACE/src/ directory.
 cd ROS2_WORKSPACE/src
 git clone https://github.com/roarLab/smorphi_driver_ros2.git
 ```
+## Setting up Nav2 Stack in Smorphi
+Run the following commands to Install Nav2
+```bash
+sudo apt install ros-humble-navigation2
+sudo apt install ros-humble-nav2-*
+```
 
 ## Build the cloned packages.
 ```bash
@@ -128,6 +134,7 @@ To save map run the following command in another terminal. Replace "my_map" with
 ```bash
 ros2 run nav2_map_server map_saver_cli -f my_map
 ```
+
 ## Activity 3: Nav2 with Smorphi
 
 Once the map is saved copy the my_map.pgm and my_map.yaml files to smorphi_ros2_launchers/map folder in the package.
